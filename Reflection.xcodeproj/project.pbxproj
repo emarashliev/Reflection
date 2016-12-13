@@ -81,6 +81,8 @@
 		6C8D31B61DF84A190017EC65 /* MappableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MappableTests.swift; path = ReflectionTests/MappableTests.swift; sourceTree = "<group>"; };
 		6C8D31B71DF84A190017EC65 /* PerformanceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PerformanceTests.swift; path = ReflectionTests/PerformanceTests.swift; sourceTree = "<group>"; };
 		6C8D31B81DF84A190017EC65 /* PublicTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PublicTests.swift; path = ReflectionTests/PublicTests.swift; sourceTree = "<group>"; };
+		6CC7A6641E00301100D6B665 /* NSManagedObjectIssue.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = NSManagedObjectIssue.playground; path = Issues/NSManagedObjectIssue.playground; sourceTree = "<group>"; };
+		6CC7A6651E00308700D6B665 /* NilIssue.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = NilIssue.playground; path = Issues/NilIssue.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		6C8D31001DF839540017EC65 = {
 			isa = PBXGroup;
 			children = (
+				6CC7A6631E002FBE00D6B665 /* Issues */,
 				6C8D31711DF8485A0017EC65 /* Sources */,
 				6C8D31AA1DF849F50017EC65 /* Tests */,
 				6C8D310B1DF839540017EC65 /* Products */,
@@ -178,6 +181,15 @@
 				6C8D31B81DF84A190017EC65 /* PublicTests.swift */,
 			);
 			name = ReflectionTests;
+			sourceTree = "<group>";
+		};
+		6CC7A6631E002FBE00D6B665 /* Issues */ = {
+			isa = PBXGroup;
+			children = (
+				6CC7A6641E00301100D6B665 /* NSManagedObjectIssue.playground */,
+				6CC7A6651E00308700D6B665 /* NilIssue.playground */,
+			);
+			name = Issues;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
