@@ -11,10 +11,30 @@ private func == (lhs: HashedType, rhs: HashedType) -> Bool {
 
 private var cachedProperties = [HashedType : Array<Property.Description>]()
 
+private protocol NilRepresentable {
+    var isNil: Bool { get }
+}
+
+extension Optional : NilRepresentable {
+    var isNil: Bool {
+        switch self {
+        case .some: return false
+        case .none: return true
+        }
+    }
+}
+
 /// An instance property
 public struct Property {
     public let key: String
     public let value: Any
+    public var isNilValue: Bool {
+        if let nilRepresentable = value as? NilRepresentable, nilRepresentable.isNil {
+            return true
+        } else {
+            return false
+        }
+    }
 
     /// An instance property description
     public struct Description {
